@@ -1,0 +1,43 @@
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 775px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+  }
+
+  .box {
+    flex: 1;
+    height: 190px;
+    background-color: #7b68ee;
+    border-radius: 10px;
+    transition-property: all ;
+    transition-duration: 2s;
+    display: block;
+  }
+
+  .box:target {
+    flex: 1.8;
+    width: 50px;
+    background-color: #ffa07a;
+  }
+
+  #b1:target  #b2,
+  #b1:target  #b3,
+
+  #b2:target  #b1,
+  #b2:target  #b3,
+
+  #b3:target  #b1,
+  #b3:target  #b2 
+  {
+    flex: 1;
+  }
